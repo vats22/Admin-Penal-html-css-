@@ -1,0 +1,62 @@
+body{
+  margin: 0% !important;
+  padding: 0% !important;
+  background-color: #f4f4f4f4 !important;
+  overflow-x: hidden !important;
+  font-family: 'Benne', serif !important;
+}
+
+.sidebar{
+  position: fixed;
+  height: 100vh;
+  width: 270px;
+  background-color: #ffffff;
+  float: left;
+}
+
+.logo{
+  padding: 15px;
+  height: 80px;
+}
+
+.logo_img{
+  max-width: 40px;
+}
+
+.logo_text{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.user_info{
+  padding: 15px;
+
+}
+
+.user_img{
+  width: 50px;
+  margin-right: 10px;
+}
+
+.user_info h5{
+  margin: 0;
+  font-weight: 700;
+}
+
+.user_info p{
+  font-size: 15px;
+  color: #847b84;
+}
+
+.menu-link .nav-link a{
+  padding: 15px;
+  color: #000;;
+  font-weight: 700;
+}
+.menu-link .nav-link:hover{
+  background-color: #f4f4f4f4;
+}
+
+.menu-link img{
+  margin-right: 15px;
+}
