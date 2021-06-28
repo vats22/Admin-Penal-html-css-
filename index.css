@@ -12,6 +12,8 @@ body{
   width: 270px;
   background-color: #ffffff;
   float: left;
+  overflow: hidden;
+  transform: 0.5s;
 }
 
 .logo{
@@ -102,4 +104,80 @@ body{
 .page_content{
   margin-left: 270px;
   min-height: 400px;
+}
+
+.top_bar{
+  background-color: #ffffff;
+  height: 70px;
+  padding: 10px 15px;
+}
+
+.search_bar{
+  position: relative;
+}
+
+.global_search{
+  border: none;
+  border-radius: 12px;
+  background-color: #f4f4f4f4 ;
+  margin-left: 15px;
+  min-width: 300px;
+  padding: 10px;
+  height: 50px;
+
+}
+.global_search:hover{
+  border: none;
+}
+
+.xyz{
+  margin-top: 15px;
+}
+
+.search_icon{
+  position:absolute;
+  top: 15px;
+  right: 15px;
+  max-width: 20px;
+}
+
+.icon_btn{
+  background-color: #f4f4f4f4;
+  border-radius: 12px;
+  padding: 12px;
+  margin-left: 15px; 
+  text-align: center;
+
+}
+
+.icon_btn img{
+  width: 25px;
+}
+
+.logo_btn{
+  background-color: #f4f4f4f4;
+  border-radius: 12px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 12px;
+  text-align: left;
+}
+
+.logo_btn h6,.logo_btn p{
+  margin: 0%;
+}
+
+.logo_btn img{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.logo_btn h6{
+  font-size: 12px;
+  font-weight: 700;
+}
+.logo_btn p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #847b84;
 }
