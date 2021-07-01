@@ -50,17 +50,17 @@ body{
   color: #847b84;
 }
 
-.menu-link .nav-link a{
+.menu_link .nav-link a{
   padding: 15px;
   color: #000;;
   font-weight: 700;
 }
-.menu-link .nav-link:hover{
+.menu_link .nav-link:hover{
   background-color: #f4f4f4f4;
   border-style: none;
 }
 
-.menu-link img{
+.menu_link img{
   margin-right: 15px;
 }
 
@@ -74,7 +74,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 12px;
+  font-size: 15px;
 }
 .active .nav-link img {
   margin: 7px;
@@ -185,13 +185,20 @@ body{
   width: 100%;
   height: 100%;
   padding: 20px 30px;
-  
 }
+.page_title{
+  padding-bottom: 15px;
+}
+
 .dash_card{
   background-color: #ffffff;
   border-radius: 12px;
   padding: 15px;
   margin-bottom: 10px;
+}
+
+.active .page_content{
+  margin-left: 100px;
 }
 .img_box{
   width: 80px;
@@ -206,7 +213,7 @@ body{
 
 .dash_conntent h4{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     color: #afa1af;
     margin-bottom: 10px;
 }
@@ -228,6 +235,22 @@ body{
   background-color: #e2b450;
 }
 
+.table thead th{
+  border: none;
+  color: #8e8b8e;
+  font-weight: 700;
+}
+.table tbody td{
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+.completed{
+  color: rgb(145, 105, 240);
+}
+.pending{
+  color: rgba(206, 89, 89, 0.925);
+}
 
 
 

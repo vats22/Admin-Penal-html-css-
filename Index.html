@@ -17,7 +17,7 @@
     <title>Admin Penal</title>
 </head>
 <body>
-   <div class="page-container">
+   <div class="page_container">
        <div class="sidebar_wrapper">
            <div class="sidebar">
                 <div class="logo">
@@ -32,12 +32,12 @@
                     <div>
                         <img src="./images/man.svg" alt="man" class="user_img">
                     </div>
-                    <div class="d-flex flex-column">
+                    <div>
                         <h5>VATSAL SHARAF</h5>
                         <p>vatsal.sharaf.@aimdek.com</p>
                     </div>
                 </div>
-                <ul class="nav flex-column menu-link">
+                <ul class="nav flex-column menu_link">
                     <li class="nav-link">
                         <a href="#">
                             <img src="./images/dashboard.svg" alt="dashboard">
@@ -143,6 +143,103 @@
                             </div>
                       </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-7">
+                            <div class="dash_card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="justify-content-center">
+                                        <h4>Orders</h4>
+                                    </div>
+                                    
+                                    <img src="./images/more.svg" alt="more"/>
+                                </div>
+                                <div class="table_responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                            <th>S.No</th>
+                                            <th>Order Id</th>
+                                            <th>Product Name</th>
+                                            <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Ord001</td>
+                                                <td>Womens bags</td>
+                                                <td class="pending">Pending</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Ord003</td>
+                                                <td>Mens Jeans</td>
+                                                <td  class="pending">Pending</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Ord004</td>
+                                                <td>kids dress</td>
+                                                <td  class="completed">completed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Ord008</td>
+                                                <td>Mobile Phone</td>
+                                                <td  class="completed">completed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Ord012</td>
+                                                <td>Gaming accessories</td>
+                                                <td class="completed">completed</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-5">
+                            <div class="dash_card">
+                                <div class="d-flex justify-content-between align-items-center ">
+                                    <h4>Users</h4>
+                                    <img src="./images/more.svg" alt="more"/>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Users</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Arun Prakash</td>
+                                                <td>active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Karthikeyan</td>
+                                                <td>active</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Ajay Prakash</td>
+                                            <td>active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>John</td>
+                                                <td>active</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alis</td>
+                                                <td>active</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
            </div>
        </div>
@@ -152,7 +249,29 @@
     <script>
         function toggle(){
             $('.sidebar').toggleClass('active');
+            $('.page_content_wrapper').toggleClass('active');
         }
+
+        // $(document).ready(function(){
+        //     $(window).bind('resize',function(){
+        //         if($(this).width()< 992){
+        //             $('.sidebar,.page_content_wrapper').addClass('active');
+        //             $('.search_bar,.togger').hide();
+        //         }
+        //     })
+        // }).trigger('resize')
+
+        $(document).ready(function(){
+            $(window).bind('resize',function(){
+                  if($(this).width() < 992){
+                        $('.sidebar,.page_content_wrapper').addClass('active');
+                        $('.search_bar,.toggler').hide();
+                  }else{
+                        $('.sidebar,.page_content_wrapper').removeClass('active');
+                        $('.search_bar,.toggler').show();
+                  }
+            }).trigger('resize');
+      });
     </script>
 
 
